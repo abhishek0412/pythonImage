@@ -4,5 +4,5 @@ COPY package.json /app
 RUN npm install
 COPY . .
 EXPOSE 80
-VOLUME ["app/feedback"]
+VOLUME ["/app/feedback"]
 CMD ["node","server.js"]
