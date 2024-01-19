@@ -1,5 +1,6 @@
 FROM python
 WORKDIR /app
 COPY . /app
-EXPOSE 5000
+ENV PORT 5000
+EXPOSE $PORT
 CMD ["python", "pythonImage.py"]
